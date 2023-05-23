@@ -4,9 +4,11 @@ layout = "about"
 date = "2020-06-22T09:37:27+05:30"
 +++
 
-- I am an OpenSource Enthusiast.
-- I contribute mostly to the Foreman Project and its eco-system that revolves around it.
-- I am a Red Hat Certified Architect in Infrastructure with certifications in technologies like Anisble, OpenShift, Puppet and Hybrid Cloud Management.
+- I am a highly skilled professional with a strong background in DevOps, Linux system administration, and software engineering.
+- I hold a MSc. in Computer Science from the Queen's University, where my research focused on software supply chain security.
+- With expertise in DevOps tools such as Ansible, Docker, Kubernetes, Puppet, Terraform, and Vagrant, I excel in automating software systems and infrastructure.
+- I consistently deliver high-quality code, implemented critical features, and actively contribute to open-source projects.
+- My passion lies in leveraging technology to enhance supply chain security and ensure the reliability and integrity of software systems.
 
 ## Contact
 
