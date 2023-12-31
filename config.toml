@@ -22,7 +22,7 @@ disableLanguages        = [""]
   highlightjsLang       = ["html", "css", "js", "toml", "shell", "bash", "go", "ruby", "reactjs", "redux"]
   viewMorePostsLink     = "/post/"
   readingTime           = true
-  socialShare           = ["twitter", "facebook", "linkedin",  "email"]
+  socialShare           = ["linkedin",  "email"]
 
   [params.meta]
     description         = "Blog"
@@ -42,7 +42,7 @@ disableLanguages        = [""]
 
   [params.intro]
     header                = "Blog"
-    paragraph             = "linux, ruby, containers, kubernetes, javascript, reactjs, redux"
+    paragraph             = "linux, containers, kubernetes"
     rssIntro              = true
     socialIntro           = true
     hideWhenSingleColumn  = false
@@ -55,7 +55,7 @@ disableLanguages        = [""]
       alt                 = "Rahul Bajaj"
 
   [params.sidebar]
-    about               = "I am a Software Engineer at Red Hat, working as a fullstack developer for the Foreman Project."
+    about               = "I am a Site Reliability Engineer at Red Hat."
     postAmount          = 5
     categories          = true
     categoriesByCount   = true
@@ -116,7 +116,6 @@ disableLanguages        = [""]
 [social]
   # Coding Communities
   github                = "rabajaj0509"
-  wordpress             = "rahulbajaj05"
-  linkedin              = "rahulbajaj0509"
+  linkedin              = "rahulbajaj0509/"
   twitter               = "rabajaj_"
   email                 = "rahulrb0509@gmail.com"

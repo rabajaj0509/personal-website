@@ -2,11 +2,11 @@
 author: "Rahul Bajaj"
 title: "Managing Containers with Systemd"
 description: "To reduce the need for manual intervention, use systemd to manage container-based applications on a health check."
-date: 2022-04-18T15:02:42-04:00
+date: 2023-07-18T15:02:42-04:00
 categories: ["containers"]
 tags: ["containers", "systemd"]
 images:
-- src: "/images/systemd-service.png"
+- src: "/images/systemd-service.jpg"
   alt: "Systemd"
 ---
 
@@ -64,6 +64,30 @@ Restart=always
 [Install]
 WantedBy=multi-user.target
 ```
+
+Let's break down the important parts:
+
+1. Unit Section:
+  * **Description**: Describes the purpose of the service.
+  * **After**: Defines the dependencies that must be started before this service.
+  * **Requires**: Specifies the units that this unit depends on.
+
+2. Service Section:
+  * **ExecStartPre**: Commands to be executed before starting the service. Here, it stops and removes any existing Docker container named 'apache'. Then it pulls the specified Docker image (using variables `apache_image` and `apache_image_tag` provided during template rendering).
+
+  * **ExecStart**: Command to start the Docker container with various options:
+
+    *--port='8080:8080'*: Maps port 8080 from the container to the host.  
+    *--name=apache*: Assigns the name 'apache' to the container.  
+    *--volume={{ apache_data_dir }}:{{ apache_data_container_dir }}*:ro: Mounts a directory from the host to a directory in the container in read-only mode.  
+    *--restart=always*: Specifies that the container should always restart if it stops.  
+    *--log-driver=journald*: Defines the logging driver for the container.  
+    *{{ apache_image }}:{{ apache_image_tag }}*: Specifies the Docker image and its tag to be used.  
+
+  * **Restart**: Defines the restart policy for the service, set to 'always'.
+
+3. Install Section:
+  * **WantedBy**: Specifies the target that this service should be enabled for.
 
 # Manage unit files within the containers using a playbook
 

@@ -4,7 +4,7 @@ layout = "about"
 date = "2020-06-22T09:37:27+05:30"
 +++
 
-- I am a highly skilled professional with a strong background in DevOps, Linux system administration, and software engineering.
+- I am a skilled professional with a strong background in DevOps, Linux system administration, and software engineering.
 - I hold a MSc. in Computer Science from the Queen's University, where my research focused on software supply chain security.
 - With expertise in DevOps tools such as Ansible, Docker, Kubernetes, Puppet, Terraform, and Vagrant, I excel in automating software systems and infrastructure.
 - I consistently deliver high-quality code, implemented critical features, and actively contribute to open-source projects.
