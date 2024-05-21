@@ -5,8 +5,8 @@ description: "To reduce the need for manual intervention, use systemd to manage 
 date: 2023-07-18T15:02:42-04:00
 categories: ["containers"]
 tags: ["containers", "systemd"]
-images:
-- src: "/images/systemd-service.jpg"
+cover:
+  image: "/images/systemd-service.jpg"
   alt: "Systemd"
 ---
 

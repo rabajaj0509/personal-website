@@ -5,16 +5,18 @@ description: ""
 date: 2023-10-28T12:00:59-05:00
 categories: ["containers"]
 tags: ["container-image", "supplychainsecurity"]
-images:
-- src: "/images/container.jpg"
+cover:
+  image: "/images/container.jpg"
   alt: "Container Build Images"
 ---
+
+### Need for slimming down containers 
 
 OpenShift, an enterprise-ready Kubernetes platform, offers a multitude of benefits. One such advantage is the Source-to-Image (S2I) build strategy, that simplifies the process of converting source code into deployable container images. This strategy enables developers to build container images without the need to define a container file explicitly. OpenShift clones the application's source code into a builder image that utilizes builder scripts, ultimately generating a container image deployable within the cluster.
 
 Employing the S2I strategy proves convenient, allowing software development teams to prioritize software development over the creation of container files. However, a notable drawback emerges as this approach tends to generate oversized images. These bulky images can rapidly consume storage capacity within private registries, resulting in prolonged push and pull times from the image registry. Beyond storage concerns, larger image sizes impact the build process, slowing down the overall build time. Moreover, heightened image size correlates with increased security risks, creating a larger attack surface for potential supply chain attacks due to the inclusion of numerous packages. Recognizing these challenges, the focus turns to exploring strategies aimed at slimming down containers.
 
-Our team adopted four primary practices to overcome this issue:
+### Four primary practices to overcome this issue
 1. Using small or minimal base images.
 2. Avoiding multiple RUN instructions.
 3. Excluding files and directories from the build context.
@@ -97,6 +99,6 @@ The example above illustrates a two-stage process within a container file. The f
 1. Using different base image in the build and runtime stages. During the build stage, more packages may be necessary. For instance, in a Java application, we employ OpenJDK, the Java Development Kit (JDK), crucial for development and building. Conversely, the runtime stage utilizes the Java Runtime Environment (JRE), a subset of the JDK containing essential libraries to run the Java application. Hence, choosing base images tailored to specific needs is essential.
 2. In the build stage, we employ `USER root` to execute all build-related tasks. This approach often becomes necessary for tasks like installing dependencies and setting up the environment, requiring elevated privileges. However, once the necessary artifacts are acquired, transitioning to a non-root user `USER someuser` in subsequent stages enhances security. It minimizes potential vulnerabilities and restricts access privileges within the final runtime environment, improving overall security posture.
 
-#### Conclusion:
+### Conclusion
 
 Lean container images are crucial for streamlined deployments, reducing storage overhead and minimizing resource consumption.

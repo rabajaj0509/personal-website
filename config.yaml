@@ -1,0 +1,116 @@
+baseurl: "https://journalctl.com/"
+title: "Rahul Bajaj"
+paginate:  6
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+pygmentsUseClasses: true
+mainsections: ["post"]
+
+minify:
+  disableXML: true
+
+languages:
+  en:
+    languageName: "English"
+    weight: 1
+    taxonomies:
+      category: categories
+      tag: tags
+      series: series
+    menu:
+      main:
+      - name: Blog
+        url: post
+        weight: 1
+      - name: About
+        url: about
+        weight: 2
+      - name: Archives
+        url: archives
+        weight: 3
+      - name: Tags
+        url: tags
+        weight: 4
+      - name: Categories
+        url: categories
+        weight: 5
+      - name: Series
+        url: series
+        weight: 6
+      - name: Search 🔍
+        url: search
+        weight: 7
+
+outputs:
+  home:
+  - HTML
+  - RSS
+  - JSON
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  description: "Rahul Bajaj - Personal Blog"
+  author: Rahul Bajaj
+
+  defaultTheme: auto
+  # disableThemeToggle: true
+  ShowShareButtons: true
+  ShowReadingTime: true
+  # disableSpecial1stPost: true
+  displayFullLangName: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowRssButtonInSectionTermList: true
+  ShowAllPagesInArchive: true
+  ShowPageNums: true
+  ShowToc: true
+  comments: true
+  images: ["images/papermod-cover.png"]
+
+
+  homeInfoParams:
+      Title: About Me
+      Content: >
+        Site Reliability Architect, Supply Chain Security Advocate, System Whisperer, Tech Enthusiast, Open-Source Contributor, Trail Trekker,
+        Speaker, etc.
+
+  socialIcons:
+    - name: linkedin
+      url: https://www.linkedin.com/in/rahulbajaj0509/
+    - name: github
+      url: https://github.com/rabajaj0509/
+
+  editPost:
+      URL: "https://github.com/rabajaj0509/personal-website/blob/master/content"
+      Text: "Suggest Changes" # edit text
+      appendFilePath: true # to append file path to Edit link
+
+  assets:
+      disableHLJS: true
+
+  fuseOpts:
+      isCaseSensitive: false
+      shouldSort: true
+      location: 0
+      distance: 1000
+      threshold: 0.4
+      minMatchCharLength: 0
+      keys: ["title", "permalink", "summary", "content"]
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+
+module:
+  imports:
+  - path: github.com/adityatelange/hugo-PaperMod
+

@@ -5,8 +5,8 @@ description: ""
 date: 2023-05-19T08:59:28-04:00
 categories: ["Event report"]
 tags: ["conference", "supplychainsecurity"]
-images:
-- src: "/images/ossna2023.jpg"
+cover:
+  image: "/images/ossna2023.jpg"
   alt: "ossna"
 ---
 
