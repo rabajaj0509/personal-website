@@ -1,6 +1,6 @@
 baseurl: "https://journalctl.com/"
 title: "Rahul Bajaj"
-paginate:  6
+paginate:  7
 
 enableInlineShortcodes: true
 enableRobotsTXT: true
@@ -33,18 +33,15 @@ languages:
       - name: Archives
         url: archives
         weight: 3
-      - name: Tags
-        url: tags
-        weight: 4
-      - name: Categories
-        url: categories
-        weight: 5
-      - name: Series
-        url: series
-        weight: 6
       - name: Search 🔍
         url: search
-        weight: 7
+        weight: 4
+      - name: Tags
+        url: tags
+        weight: 5
+      - name: Categories
+        url: categories
+        weight: 6
 
 outputs:
   home:
@@ -70,7 +67,7 @@ params:
   ShowAllPagesInArchive: true
   ShowPageNums: true
   ShowToc: true
-  comments: true
+  comments: false
   images: ["images/papermod-cover.png"]
 
 
