@@ -6,7 +6,7 @@ description: ""
 tags: ["CI/CD", "supplychainsecurity"]
 date: 2023-12-21T11:46:02-04:00
 cover:
-  image: "/images/renovate-dependency.png"
+  image: /images/renovate-dependency.png
   alt: "mend-renovate"
 ---
 

@@ -6,7 +6,7 @@ date: 2023-10-28T12:00:59-05:00
 categories: ["containers"]
 tags: ["container-image", "supplychainsecurity"]
 cover:
-  image: "/images/container.jpg"
+  image: /images/container.jpg
   alt: "Container Build Images"
 ---
 
