@@ -3,7 +3,7 @@ author: "Rahul Bajaj"
 title: "Slimming Down Containers: The Art of Minimizing Image Bloat"
 description: ""
 date: 2023-10-28T12:00:59-05:00
-categories: ["containers"]
+categories: ["containers", "security"]
 tags: ["container-image", "supplychainsecurity"]
 cover:
   image: /images/container.jpg
