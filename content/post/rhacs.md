@@ -1,8 +1,7 @@
 ---
 author: "Rahul Bajaj"
-title: "Unlocking Stackrox/RHACS (Part 1): A Comprehensive Guide to Container Security"
+title: "Unlocking RHACS (Part 1): Vulnerability Management and Workload Hardening Policies"
 categories: ["CI/CD", "OpenShift"]
-description: "Walk through the steps to set up the integration using the RHACS API."
 tags: ["CI/CD", "supplychainsecurity"]
 date: 2024-03-14T08:59:28-04:00
 cover:
