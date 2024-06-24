@@ -1,6 +1,6 @@
 ---
 author: "Rahul Bajaj"
-title: "Unlocking RHACS (Part 1): Vulnerability Management and Workload Hardening Policies"
+title: "Unlocking RHACS: Vulnerability Management and Workload Hardening Policies"
 categories: ["CI/CD", "OpenShift"]
 tags: ["CI/CD", "supplychainsecurity"]
 date: 2024-03-14T08:59:28-04:00
