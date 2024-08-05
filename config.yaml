@@ -1,6 +1,6 @@
 baseurl: "https://journalctl.org/"
 title: "Rahul Bajaj"
-paginate:  7
+paginate: 5
 
 enableInlineShortcodes: true
 enableRobotsTXT: true
