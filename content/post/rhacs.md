@@ -5,7 +5,7 @@ categories: ["CI/CD", "OpenShift"]
 tags: ["CI/CD", "supplychainsecurity"]
 date: 2024-03-14T08:59:28-04:00
 cover:
-  image: /images/rhacs_security.png
+  image: /images/rhacs_security.jpg
   alt: "secure-k8s-cluster"
 ---
 

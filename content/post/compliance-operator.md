@@ -1,6 +1,6 @@
 ---
 author: "Rahul Bajaj"
-title: "Unraveling the Complexities: Navigating OpenShift’s Compliance Operator"
+title: "Navigating OpenShift’s Compliance Operator"
 description: ""
 date: 2024-06-22T10:29:34-04:00
 categories: ["containers", "security"]
